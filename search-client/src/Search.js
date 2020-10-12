@@ -30,7 +30,7 @@ class Search extends Component {
           }
           return(
           <div key={data.id} className="list">
-          <table>
+            <table>
           <thead>
             <tr style={{position:'relative',left:'10vh'}}>
               <th>id</th>
@@ -54,7 +54,7 @@ class Search extends Component {
               
             </tr>
             </tbody>
-            </table>
+          </table>
             </div>
           )
         })
@@ -66,13 +66,16 @@ class Search extends Component {
   }
 
   render() {
+   
+       
+    
     return (<div>
     <Form onSubmit={this.handleSubmit}>
           <Input type="search" value={this.state.value} onChange={this.handleSubmit} className="col-5" placeholder="search..."/>
     </Form>
-    
+  
           {this.items}
-   
+          
       </div>
     );
   }

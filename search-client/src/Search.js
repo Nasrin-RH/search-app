@@ -31,7 +31,7 @@ class Search extends Component {
           return(
           <div key={data.id} className="list">
             <table>
-          <thead>
+          {/* <thead>
             <tr style={{position:'relative',left:'10vh'}}>
               <th>id</th>
               <th>name</th>
@@ -41,7 +41,7 @@ class Search extends Component {
               <th>contact</th>
               <th>email</th>
             </tr>
-          </thead>
+          </thead> */}
           <tbody>
             <tr key={data.id} style={{position:'relative',left:'10vh'}}>
               <td style={styleInfo}>{data.id}</td>
